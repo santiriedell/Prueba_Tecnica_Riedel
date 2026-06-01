@@ -11,7 +11,6 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      // Cada vez que uses '/api', Vite lo cambia por la URL de N2YO
       '/api': {
         target: 'https://api.n2yo.com/rest/v1/satellite',
         changeOrigin: true,
